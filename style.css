@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --black: #393E46;
+    --green: #6D9886;
+    --yellow: #F2E7D5;
+    --white: #F7F7F7;
+}
+html, body {
+    
+    background-color: var(--yellow);
+}
+
+header {
+    background-color: var(--black);
+    padding: 20px;
+    text-align: center;
+    color: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 18px;
+    padding: 0 10px;
+}
+header img {
+    max-width: 40px;
+    /* width: 40px; */
+    height: 40px;
+
+}
+
+header > i {
+    font-size: 30px;
+    padding: 0 5px;
+    color: var(--yellow);
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: var(--green);
+    text-align: center;
+}
+.input-div {
+    padding: 20px 0;
+}
+#todo-input {
+    padding: 4px 0;
+    outline: none;
+    border: 2px solid var(--black);
+    border-radius: 3px;
+    max-width: 250px;
+}
+#todo-btn {
+    padding: 6px 10px;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.todo-container {
+    display: none;
+    background: var(--white);
+    list-style: none;
+    padding: 20px;
+    text-align: left;
+    border-radius: 3px;
+}
+
+.todo-container .list-item {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid var(--green);
+    margin: 10px 0;
+    color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-container > .list-item:hover {
+    transition: 0.5s;
+    background-color: var(--green);
+}
+i {
+    cursor: pointer;
+}
+i:hover{
+    color: red;
+    opacity: 0.7;
+}
+
+#no-list img {
+    width: 60%;
+    height: 100%;
+}
